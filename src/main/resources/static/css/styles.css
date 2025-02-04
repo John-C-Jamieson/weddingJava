@@ -1,0 +1,104 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+/* Header / Hero Section */
+header {
+    background: url('../images/wedding-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header .date {
+    font-size: 1.5em;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+}
+
+/* Countdown Section */
+.countdown-section {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.time-box {
+    background: #e2e2e2;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100px;
+}
+
+.time-box span {
+    display: block;
+}
+
+.time-box .label {
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+/* RSVP Form */
+.rsvp form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rsvp input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.rsvp button {
+    padding: 10px 20px;
+    border: none;
+    background: #5c6bc0;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rsvp button:hover {
+    background: #3949ab;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
