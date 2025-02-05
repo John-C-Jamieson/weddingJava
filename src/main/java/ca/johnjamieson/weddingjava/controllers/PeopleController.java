@@ -26,7 +26,7 @@ public class PeopleController {
     @PostMapping("/rsvp")
     public String submitRsvp(@ModelAttribute People people, Model model) {
         peopleRepository.save(people);
-        model.addAttribute("message", "Thank you for your RSVP!");
+        model.addAttribute("thanks", "Thank you for your RSVP!");
         return "rsvp"; // You can also redirect or show a confirmation page
     }
 }
