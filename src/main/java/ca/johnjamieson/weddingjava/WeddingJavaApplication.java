@@ -14,6 +14,11 @@ public class WeddingJavaApplication
 
 		// Set each .env variable as a system property
 		dotenv.entries().forEach(entry -> System.setProperty(entry.getKey(), entry.getValue()));
+
+		System.out.println("DB_URL: " + System.getProperty("DB_URL"));
+		System.out.println("DB_USERNAME: " + System.getProperty("DB_USERNAME"));
+		System.out.println("DB_PASSWORD: " + System.getProperty("DB_PASSWORD"));
+
 		SpringApplication.run(WeddingJavaApplication.class, args);
 	}
 }
