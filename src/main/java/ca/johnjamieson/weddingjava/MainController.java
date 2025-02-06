@@ -9,9 +9,9 @@ public class MainController {
     @GetMapping("/")
     public String showSaveTheDatePage(Model model) {
         // Add wedding details to the model.
-        model.addAttribute("coupleNames", "John & Jane");
-        model.addAttribute("weddingDate", "August 15, 2025");
-        model.addAttribute("venue", "Beautiful Garden Venue");
-        return "save-the-date"; // returns the view name (savethedate.html)
+        // model.addAttribute("coupleNames", "John & Jane");
+        // model.addAttribute("weddingDate", "August 15, 2025");
+        // model.addAttribute("venue", "Beautiful Garden Venue");
+        return "index"; // returns the view name (savethedate.html)
     }
 }

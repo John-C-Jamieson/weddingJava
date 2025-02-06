@@ -74,6 +74,20 @@
 			<version>4.0.0</version>
 		</dependency>
 
+		<!-- WebJars Bootstrap for adding Bootstrap CSS and JS to your web application -->
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>5.3.3</version>
+		</dependency>
+
+		<!-- WebJars jQuery for including the jQuery JavaScript library in your web application -->
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>jquery</artifactId>
+			<version>3.7.1</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
