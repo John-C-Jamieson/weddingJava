@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="head">
+    <!-- Head Fragment -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title th:fragment="pageTitle">Best Wedding Ever!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+</head>
+<body>
+<!-- Navigation Fragment -->
+<nav th:fragment="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" th:href="@{/}">Our Wedding</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" th:href="@{/welcome}">Welcome</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/details}">Event Details</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/gallery}">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/contact}">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- RSVP Modal Fragment -->
+<div th:fragment="rsvpModal" class="modal fade" id="rsvpModal" tabindex="-1" aria-labelledby="rsvpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="rsvpModalLabel">RSVP</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="rsvpForm" th:action="@{/rsvp}" th:object="${rsvp}" method="post">
+                    <div class="mb-3">
+                        <label for="rsvpName" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="rsvpName" th:field="*{name}" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="rsvpEmail" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="rsvpEmail" th:field="*{email}" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="rsvpAttendance" class="form-label">Message (optional):</label>
+                        <textarea class="form-control" id="rsvpAttendance" th:field="*{message}"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit RSVP</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Fragment -->
+<footer th:fragment="footer" class="text-center py-4 bg-light fixed-bottom">
+    <div class="container">
+        <p class="mb-0">&copy; 2025 Our Wedding. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Scripts Fragment -->
+<th:block th:fragment="scripts">
+    <script th:src="@{/webjars/jquery/3.7.1/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{/js/script.js}"></script>
+</th:block>
+
+</body>
+</html>
