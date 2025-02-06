@@ -68,11 +68,7 @@
 		</dependency>
 
 		<!-- Spring Dotenv for loading environment variables from a .env file into the Spring application context -->
-		<dependency>
-			<groupId>me.paulschwarz</groupId>
-			<artifactId>spring-dotenv</artifactId>
-			<version>4.0.0</version>
-		</dependency>
+
 
 	</dependencies>
 
