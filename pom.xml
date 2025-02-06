@@ -69,7 +69,6 @@
 
 		<!-- Spring Dotenv for loading environment variables from a .env file into the Spring application context -->
 
-
 	</dependencies>
 
 	<build>
