@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface PersonRepository extends JpaRepository<Person, Long>
 {
-    // Additional query methods (if needed) can be defined here.
+    // Additional query methods can be defined here.
 }
