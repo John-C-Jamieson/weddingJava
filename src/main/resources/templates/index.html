@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<th:block th:replace="template :: head"></th:block>
+<th:block th:replace="~{template :: head}"></th:block>
 
 <body>
 
 <!-- Include the Navigation fragment -->
-<th:block th:replace="template :: navbar"></th:block>
+<th:block th:replace="~{template :: navbar}"></th:block>
 
-<main class="d-flex align-items-center justify-content-center">
+<header class="d-flex align-items-center justify-content-center">
     <div class="text-center text-white">
         <h1 class="display-4">Save the Date</h1>
         <p class="lead">We're getting married! Join us for our celebration.</p>
@@ -17,16 +17,16 @@
             RSVP
         </button>
     </div>
-</main>
+</header>
 
 <!-- Include the RSVP Modal fragment (if it should appear on this page) -->
-<th:block th:replace="template :: rsvpModal"></th:block>
+<th:block th:replace="~{template :: rsvpModal}"></th:block>
 
 <!-- Include the Footer fragment -->
-<th:block th:replace="template :: footer"></th:block>
+<th:block th:replace="~{template :: footer}"></th:block>
 
 <!-- Include the Scripts fragment -->
-<th:block th:replace="template :: scripts"></th:block>
+<th:block th:replace="~{template :: scripts}"></th:block>
 
 </body>
 </html>
