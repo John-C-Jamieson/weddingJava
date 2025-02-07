@@ -1,4 +1,4 @@
-package ca.johnjamieson.weddingjava.models;
+package ca.johnjamieson.weddingjava.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class People
+public class Person
 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,12 +16,12 @@ public class People
     private String message; // Optional message from the guest
 
     // Constructors
-    public People()
+    public Person()
     {
 
     }
 
-    public People(String name, String email, String message)
+    public Person(String name, String email, String message)
     {
         this.name = name;
         this.email = email;

@@ -1,4 +1,4 @@
-package ca.johnjamieson.weddingjava;
+package ca.johnjamieson.weddingjava.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,6 +12,6 @@ public class MainController {
         // model.addAttribute("coupleNames", "John & Jane");
         // model.addAttribute("weddingDate", "August 15, 2025");
         // model.addAttribute("venue", "Beautiful Garden Venue");
-        return "index"; // returns the view name (savethedate.html)
+        return "index"; // returns the view name (index.html)
     }
 }

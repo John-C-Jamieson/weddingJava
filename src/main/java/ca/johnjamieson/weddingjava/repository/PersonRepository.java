@@ -1,12 +1,12 @@
-package ca.johnjamieson.weddingjava.repositories;
+package ca.johnjamieson.weddingjava.repository;
 
-import ca.johnjamieson.weddingjava.models.People;
+import ca.johnjamieson.weddingjava.model.Person;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 // Provides basic CRUD operations for the People entity
 @Repository
-public interface PeopleRepository extends JpaRepository<People, Long>
+public interface PersonRepository extends JpaRepository<Person, Long>
 {
     // Additional query methods (if needed) can be defined here.
 }
