@@ -8,10 +8,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MainController extends BaseController {
     @GetMapping("/")
     public String showSaveTheDatePage(Model model) {
-        // Add wedding details to the model.
-        // model.addAttribute("coupleNames", "John & Jane");
-        // model.addAttribute("weddingDate", "August 15, 2025");
-        // model.addAttribute("venue", "Beautiful Garden Venue");
         return "index"; // returns the view name (index.html)
+    }
+
+    @GetMapping("/location")
+    public String showLocation(Model model) {
+        return "location";// returns the view name (location.html)
     }
 }

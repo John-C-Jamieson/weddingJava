@@ -24,7 +24,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" >Welcome</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/location}">Location</a></li>
                 <li class="nav-item"><a class="nav-link" >Event Details</a></li>
                 <li class="nav-item"><a class="nav-link" >Gallery</a></li>
                 <li class="nav-item"><a class="nav-link" >Contact</a></li>
@@ -66,13 +66,6 @@
         </div>
     </div>
 </div>
-
-<!-- Footer Fragment -->
-<footer th:fragment="footer" class="text-center py-4 bg-light fixed-bottom">
-    <div class="container">
-        <p class="mb-0">&copy; 2025 Our Wedding. All rights reserved.</p>
-    </div>
-</footer>
 
 <!-- Scripts Fragment -->
 <th:block th:fragment="scripts">

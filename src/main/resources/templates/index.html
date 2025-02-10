@@ -8,18 +8,24 @@
 <!-- Include the Navigation fragment -->
 <th:block th:replace="~{template :: navbar}"></th:block>
 
-<header class="d-flex align-items-center justify-content-center">
+<main id="bigImage" class="d-flex align-items-center justify-content-center">
     <div class="text-center text-white">
-        <h1 class="display-4">Save the Date</h1>
-        <p class="lead">We're getting married! Join us for our celebration.</p>
+        <h1 class="display-4">John &amp; Rosemary</h1>
+        <p class="lead">16/08/2025</p>
+        <p class="lead">6pm – 12am</p>
+    </div>
+</main>
+
+<header id="hero" class="hero">
+    <div class="container">
+        <h1>Jane &amp; John</h1>
+        <p class="lead">Join us on our special day!</p>
+        <a href="#rsvp" class="btn btn-primary btn-lg">RSVP Now</a>
     </div>
 </header>
 
 <!-- Include the RSVP Modal fragment (if it should appear on this page) -->
 <th:block th:replace="~{template :: rsvpModal}"></th:block>
-
-<!-- Include the Footer fragment -->
-<th:block th:replace="~{template :: footer}"></th:block>
 
 <!-- Include the Scripts fragment -->
 <th:block th:replace="~{template :: scripts}"></th:block>

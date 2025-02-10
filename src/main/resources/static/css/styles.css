@@ -7,9 +7,7 @@ body {
     padding: 0;
 }
 
-/* Landing page header styles */
-header {
-    /* Ensure the header takes up the full viewport height */
+#bigImage {
     height: 100vh;
     background: url('../images/wedding-bg.jpg') no-repeat center center;
     background-size: cover;
@@ -20,17 +18,17 @@ header {
     padding: 0 15px;
 }
 
-header h1 {
+#bigImage h1 {
     font-size: 3rem;
 }
 
-header p {
+#bigImage p {
     font-size: 1.25rem;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    header h1 {
+    #bigImage h1 {
         font-size: 2.5rem;
     }
 }
