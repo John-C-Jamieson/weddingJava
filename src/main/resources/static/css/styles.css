@@ -19,11 +19,13 @@ body {
 }
 
 #bigImage h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 #bigImage p {
-    font-size: 1.25rem;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 /* Responsive adjustments */
@@ -31,11 +33,6 @@ body {
     #bigImage h1 {
         font-size: 2.5rem;
     }
-}
-
-/* Footer background */
-footer {
-    background-color: #f8f9fa;
 }
 
 /* Custom styling for the RSVP button */
