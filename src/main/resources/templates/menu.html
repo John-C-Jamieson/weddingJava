@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:replace="~{template :: head}"></th:block>
+
+<body>
+
+<!-- Include the Navigation fragment -->
+<th:block th:replace="~{template :: navbar}"></th:block>
+
+<main id="bigImage" class="d-flex align-items-center justify-content-center">
+  <div class="text-center text-white">
+    <h1 class="display-4">John &amp; Rosemary</h1>
+    <p class="lead">16/08/2025<br>6pm – 12am</p>
+  </div>
+</main>
+
+<!-- Include the RSVP Modal fragment (if it should appear on this page) -->
+<th:block th:replace="~{template :: rsvpModal}"></th:block>
+
+<!-- Include the Scripts fragment -->
+<th:block th:replace="~{template :: scripts}"></th:block>
+
+</body>
+</html>
