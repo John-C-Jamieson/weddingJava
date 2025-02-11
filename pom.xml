@@ -96,6 +96,14 @@
 			<optional>true</optional>
 		</dependency>
 
+		<!-- Dependency for using OpenFeign in Spring Cloud projects. -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+			<version>4.2.0</version>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>

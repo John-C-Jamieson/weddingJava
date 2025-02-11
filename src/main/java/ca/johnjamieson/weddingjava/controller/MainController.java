@@ -22,24 +22,24 @@ public class MainController extends BaseController
     @GetMapping("/dress")
     public String showDress(Model model)
     {
-        return "dress";// returns the view name (location.html)
+        return "dress";// returns the view name (dress.html)
     }
 
     @GetMapping("/menu")
     public String showMenu(Model model)
     {
-        return "menu";// returns the view name (location.html)
+        return "menu";// returns the view name (menu.html)
     }
 
     @GetMapping("/registry")
     public String showRegistry(Model model)
     {
-        return "registry";// returns the view name (location.html)
+        return "registry";// returns the view name (registry.html)
     }
 
     @GetMapping("/schedule")
     public String showSchedule(Model model)
     {
-        return "schedule";// returns the view name (location.html)
+        return "schedule";// returns the view name (schedule.html)
     }
 }

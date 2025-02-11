@@ -8,13 +8,48 @@
 <!-- Include the Navigation fragment -->
 <th:block th:replace="~{template :: navbar}"></th:block>
 
-<!-- Main content unique to the Welcome page -->
-<main class="container" style="margin-top: 120px;">
-    <div class="row">
-        <div class="col-md-12">
-            <h2>Welcome to Our Wedding Website</h2>
-            <p>More content specific to the welcome page goes here.</p>
+<main>
+    <div class="container my-5">
+        <h1 class="mb-4">Location &amp; Getting There</h1>
+
+        <!-- Venue Details -->
+        <section class="mb-5">
+            <h2>Ceremony and Reception to be held at:</h2>
+            <address class="mb-3">
+                <strong>Cluny Bistro &amp; Boulangerie</strong><br>
+                35 Tank House Lane<br>
+                Toronto, ON M5A 3C4
+            </address>
+        </section>
+
+        <!-- Map & Venue Photo -->
+        <div class="row">
+            <!-- Google Map Embed -->
+            <div class="col-md-6 mb-4">
+                <h3>Find Us on the Map</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d180.43029133832542!2d-79.35781757315736!3d43.650567958982535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb3df31d947d%3A0xa1cc9f773ce75572!2sCluny%20Bistro%20%26%20Boulangerie!5e0!3m2!1sen!2sca!4v1739234490652!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- Venue or Brickworks Photo -->
+            <div class="col-md-6 mb-4">
+                <h3>Venue Photo</h3>
+                <!-- Replace the src value with your actual image path or URL -->
+                <img src="path/to/your-image.jpg" alt="Cluny Bistro &amp; Boulangerie or The Brickworks" class="img-fluid rounded">
+            </div>
         </div>
+
+        <!-- Parking & TTC Information -->
+        <section>
+            <h3>Parking &amp; Transit</h3>
+            <p>
+                For more details on parking and TTC directions, please visit the
+                <a href="https://www.thedistillerydistrict.com/directions-parking/" target="_blank">
+                    Distillery District Directions &amp; Parking page
+                </a>.
+            </p>
+        </section>
     </div>
 </main>
 
