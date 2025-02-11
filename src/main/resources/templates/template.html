@@ -15,7 +15,7 @@
 <body>
 
 <!-- Navigation Fragment -->
-<nav th:fragment="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav th:fragment="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" th:href="@{/}">Our Wedding</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -61,10 +61,6 @@
             </div>
         </div>
     </div>
-</div>
-
-<div th:fragment="footer" class="mt-5 p-4 bg-dark text-white text-center">
-    <p>Footer</p>
 </div>
 
 <!-- Scripts Fragment -->

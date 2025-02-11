@@ -8,14 +8,9 @@
 <!-- Include the Navigation fragment -->
 <th:block th:replace="~{template :: navbar}"></th:block>
 
-<main id="bigImage" class="d-flex align-items-center justify-content-center">
-    <div class="text-center text-white">
-        <h1 class="display-4">John &amp; Rosemary</h1>
-        <p class="lead">16/08/2025<br>6pm – 12am</p>
-    </div>
-</main>
+<div id="bigImage" class="container-fluid" background="wedding-bg.jpg">
 
-<th:block th:replace="~{template :: footer}"></th:block>
+</div>
 
 <!-- Include the RSVP Modal fragment (if it should appear on this page) -->
 <th:block th:replace="~{template :: rsvpModal}"></th:block>
