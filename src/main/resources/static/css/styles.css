@@ -1,34 +1,10 @@
-/* Ensure consistent box-sizing for all elements */
-html {
-    box-sizing: border-box;
-}
-
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
-/* Remove default margin and padding */
-body,
-h1, h2, h3, h4, h5, h6,
-p,
-figure,
-blockquote,
-dl, dd {
-    margin: 0;
-    padding: 0;
-}
-
-/* Base typography and color settings */
-body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-    background-color: #fff;
-}
-
 #bigImage
 {
     background: url(../images/wedding-bg.jpg) no-repeat center center/cover;
     min-height: 100vh;
+    text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px  1px 0 black,
+            1px  1px 0 black;
 }
