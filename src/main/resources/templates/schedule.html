@@ -3,7 +3,7 @@
 
 <th:block th:replace="~{template :: head}"></th:block>
 
-<body>
+<body th:class="${theme}">
 
 <!-- Include the Navigation fragment -->
 <th:block th:replace="~{template :: navbar}"></th:block>

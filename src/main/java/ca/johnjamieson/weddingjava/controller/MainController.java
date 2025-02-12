@@ -1,5 +1,6 @@
 package ca.johnjamieson.weddingjava.controller;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,9 +8,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class MainController extends BaseController
 {
+
+    @Value("bg-light")
+    private String theme;
+
     @GetMapping("/")
     public String showSaveTheDatePage(Model model)
     {
+        model.addAttribute("theme", theme);
         return "index"; // returns the view name (index.html)
     }
 
