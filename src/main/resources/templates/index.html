@@ -8,18 +8,17 @@
 <!-- Include the Navigation fragment -->
 <th:block th:replace="~{template :: navbar}"></th:block>
 
-<div id="bigImage" class="container-fluid d-flex justify-content-center align-items-center full-height">
-    <div class="text-white text-center">
-        <h1><strong>
-            On the 16th day of August,<br>
-            in the year of our Lord 2025,<br>
-            between the hours of<br>
-            6:00 and 11:59 post meridiem,<br>
-            Rosemary and John<br>
-            will be married.
-        </strong></h1>
-    </div>
-</div>
+<main class="container-fluid row p-0">
+    <div class="col-sm-6 p-0"><h1>
+        On the 16th day of August,<br>
+        in the year of our Lord 2025,<br>
+        between the hours of<br>
+        6:00 and 11:59 post meridiem,<br>
+        Rosemary and John<br>
+        will be married.
+    </h1></div>
+    <div class="col-sm-6 p-0"><img th:src="@{../images/wedding-bg.jpg}" class="img-fluid" alt="Rosemary and John"></div>
+</main>
 
 <!-- Include the RSVP Modal fragment (if it should appear on this page) -->
 <th:block th:replace="~{template :: rsvpModal}"></th:block>
