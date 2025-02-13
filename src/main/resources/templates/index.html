@@ -10,16 +10,8 @@
 <!-- Include the Navigation fragment -->
 <th:block th:replace="~{template :: navbar}"></th:block>
 
-<main class="container-fluid row">
-    <div class="col-lg-6"><h1>
-        On the 16th day of August,<br>
-        in the year of our Lord 2025,<br>
-        between the hours of<br>
-        6:00 and 11:59 post meridiem,<br>
-        Rosemary and John<br>
-        will be married.
-    </h1></div>
-    <div class="col-lg-6"><img th:src="@{../images/wedding-bg.jpg}" class="img-fluid" alt="Rosemary and John"></div>
+<main class="container-fluid row justify-content-center">
+    <div class="col-lg-6"><img th:src="@{../images/wedding-bg.jpg}" class="img-fluid img-thumbnail" alt="John and Rosemary"></div>
 </main>
 
 <!-- Include the RSVP Modal fragment (if it should appear on this page) -->
