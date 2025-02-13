@@ -15,13 +15,13 @@
 <body th:class="${theme}">
 
 <header th:fragment="header" class="container-fluid d-flex justify-content-between m-0 p-0">
-    <img class="img-fluid" th:src="@{../images/flower-left.png}" alt="Flowers">
+    <img class="img-fluid" th:src="@{../images/flowers-top-left.png}" alt="Flowers">
     <div class="text-center">
         <h1>John & Rosemary</h1>
         <h1>16/08/2025</h1>
         <h1>6pm-12am</h1>
     </div>
-    <img class="img-fluid" th:src="@{../images/flower-right.png}" alt="Flowers">
+    <img class="img-fluid" th:src="@{../images/flowers-top-right.png}" alt="Flowers">
 </header>
 
 <!-- Navigation Fragment -->
@@ -72,6 +72,11 @@
         </div>
     </div>
 </div>
+
+<footer th:fragment="footer" class="container-fluid d-flex justify-content-between m-0 p-0">
+    <img class="img-fluid" th:src="@{../images/flowers-bottom-left.png}" alt="Flowers">
+    <img class="img-fluid" th:src="@{../images/flowers-bottom-right.png}" alt="Flowers">
+</footer>
 
 <!-- Scripts Fragment -->
 <th:block th:fragment="scripts">
