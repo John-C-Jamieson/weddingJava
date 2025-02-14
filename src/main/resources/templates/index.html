@@ -7,11 +7,13 @@
 
 <th:block th:replace="~{template :: header}"></th:block>
 
+<th:block th:replace="~{template :: title}"></th:block>
+
 <!-- Include the Navigation fragment -->
 <th:block th:replace="~{template :: navbar}"></th:block>
 
 <main class="container-fluid row justify-content-center">
-    <div class="col-lg-6"><img th:src="@{../images/wedding-bg.jpg}" class="img-fluid img-thumbnail" alt="John and Rosemary"></div>
+    <div class="col-lg-8"><img th:src="@{../images/wedding-bg.jpg}" class="img-fluid img-thumbnail" alt="John and Rosemary"></div>
 </main>
 
 <th:block th:replace="~{template :: footer}"></th:block>
